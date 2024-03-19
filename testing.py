@@ -54,6 +54,12 @@ class TestShoppingCart(unittest.TestCase):
 
         self.assertEqual(cart.get_cart_total(), 35)
 
+    def test_integration_zero(self):
+         cart = ShoppingCart()
+         self.assertEqual(cart.get_cart_total(), 0)
+
+        
+
 
 
     
